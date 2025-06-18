@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ガラス繊維製造装置ブッシングの世界動向レポート 2024-2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title" data-aos="fade-down">
+                <i class="fas fa-chart-line"></i>
+                ガラス繊維製造装置ブッシングの世界動向レポート 2024-2025
+            </h1>
+            <nav class="nav">
+                <a href="#summary" class="nav-link">サマリー</a>
+                <a href="#market" class="nav-link">市場規模</a>
+                <a href="#region" class="nav-link">地域分析</a>
+                <a href="#technology" class="nav-link">技術動向</a>
+                <a href="#companies" class="nav-link">企業分析</a>
+                <a href="#forecast" class="nav-link">予測</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main">
+        <!-- エグゼクティブサマリー -->
+        <section id="summary" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-chart-bar"></i>
+                    エグゼクティブサマリー
+                </h2>
+                <div class="summary-grid">
+                    <div class="summary-card">
+                        <h3>中国特許承認数</h3>
+                        <div class="metric">
+                            <span class="metric-value">104.5万件</span>
+                            <span class="metric-change positive">+13.5%</span>
+                        </div>
+                        <p>2024年発明特許承認数</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>米国特許承認数</h3>
+                        <div class="metric">
+                            <span class="metric-value">36.9万件</span>
+                            <span class="metric-change positive">+5.7%</span>
+                        </div>
+                        <p>2024年特許承認数</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>CAGR予測</h3>
+                        <div class="metric">
+                            <span class="metric-value">3.72%</span>
+                        </div>
+                        <p>2025-2033年成長率</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 市場規模 -->
+        <section id="market" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-globe"></i>
+                    世界市場規模と成長予測
+                </h2>
+                <div class="chart-container">
+                    <canvas id="marketChart"></canvas>
+                </div>
+                <div class="market-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">2024年市場規模</span>
+                        <span class="stat-value">128.0億ドル</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">2033年予測</span>
+                        <span class="stat-value">178.0億ドル</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 地域別分析 -->
+        <section id="region" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-map"></i>
+                    地域別市場分析
+                </h2>
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <h3>地域別市場シェア（2024年）</h3>
+                        <canvas id="regionChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>中国市場成長予測</h3>
+                        <canvas id="chinaChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技術動向 -->
+        <section id="technology" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-cogs"></i>
+                    技術動向分析
+                </h2>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h3>技術革新分野別投資比率</h3>
+                        <canvas id="techInvestmentChart"></canvas>
+                    </div>
+                    <div class="tech-card">
+                        <h3>特許出願国別比較</h3>
+                        <canvas id="patentChart"></canvas>
+                    </div>
+                    <div class="tech-card">
+                        <h3>特許技術分野別分布</h3>
+                        <canvas id="patentTechChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="innovation-highlights">
+                    <h3>主要技術革新ポイント</h3>
+                    <div class="innovation-grid">
+                        <div class="innovation-item">
+                            <i class="fas fa-atom"></i>
+                            <h4>プラチナ合金ブッシング</h4>
+                            <p>1200℃耐高温ガラス侵食対応技術</p>
+                        </div>
+                        <div class="innovation-item">
+                            <i class="fas fa-thermometer-half"></i>
+                            <h4>温度制御システム</h4>
+                            <p>精密温度管理による品質向上</p>
+                        </div>
+                        <div class="innovation-item">
+                            <i class="fas fa-weight-hanging"></i>
+                            <h4>軽量化技術</h4>
+                            <p>300g vs 900g（従来比66%削減）</p>
+                        </div>
+                        <div class="innovation-item">
+                            <i class="fas fa-robot"></i>
+                            <h4>自動化・デジタル化</h4>
+                            <p>製造プロセスの効率化推進</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 用途別分析 -->
+        <section id="applications" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-industry"></i>
+                    用途別市場分析
+                </h2>
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <h3>用途別市場シェア（2024年）</h3>
+                        <canvas id="applicationChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>用途別成長率（CAGR 2024-2030）</h3>
+                        <canvas id="growthChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 企業分析 -->
+        <section id="companies" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-building"></i>
+                    主要企業分析
+                </h2>
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <h3>主要企業市場シェア</h3>
+                        <canvas id="companyChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>R&D投資額比較（2024年）</h3>
+                        <canvas id="rdChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="company-profiles">
+                    <h3>主要企業プロファイル</h3>
+                    <div class="company-grid">
+                        <div class="company-card">
+                            <h4><i class="fas fa-flag"></i> 巨石集団（中国）</h4>
+                            <div class="company-stats">
+                                <div class="stat">
+                                    <span class="stat-label">生産能力</span>
+                                    <span class="stat-value">200万トン/年</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">2024年売上</span>
+                                    <span class="stat-value">155.4億元</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">従業員数</span>
+                                    <span class="stat-value">1万人以上</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-card">
+                            <h4><i class="fas fa-mountain"></i> 泰山玻纤（中国）</h4>
+                            <div class="company-stats">
+                                <div class="stat">
+                                    <span class="stat-label">生産能力</span>
+                                    <span class="stat-value">140万トン/年</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">世界ランク</span>
+                                    <span class="stat-value">第2位</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">輸出先</span>
+                                    <span class="stat-value">70以上の国</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-card">
+                            <h4><i class="fas fa-globe-americas"></i> CPIC（中国）</h4>
+                            <div class="company-stats">
+                                <div class="stat">
+                                    <span class="stat-label">世界ランク</span>
+                                    <span class="stat-value">第3位</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">生産拠点</span>
+                                    <span class="stat-value">6ヶ所</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">業界経験</span>
+                                    <span class="stat-value">1970年代から</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 市場課題 -->
+        <section id="challenges" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    市場推進要因と課題
+                </h2>
+                <div class="challenges-grid">
+                    <div class="drivers-card">
+                        <h3><i class="fas fa-arrow-up text-green"></i> 推進要因</h3>
+                        <ul class="drivers-list">
+                            <li><i class="fas fa-car"></i> 軽量・高性能材料への需要増加</li>
+                            <li><i class="fas fa-building"></i> 建設・インフラ需要の拡大</li>
+                            <li><i class="fas fa-rocket"></i> 技術革新の加速</li>
+                            <li><i class="fas fa-leaf"></i> 環境対応技術の発展</li>
+                        </ul>
+                    </div>
+                    <div class="challenges-card">
+                        <h3><i class="fas fa-arrow-down text-red"></i> 主要課題</h3>
+                        <canvas id="challengesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2025年予測 -->
+        <section id="forecast" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-crystal-ball"></i>
+                    2025年市場予測
+                </h2>
+                <div class="forecast-grid">
+                    <div class="forecast-card">
+                        <h3>地域別成長率予測</h3>
+                        <canvas id="regionGrowthChart"></canvas>
+                    </div>
+                    <div class="forecast-card">
+                        <h3>価格動向予測</h3>
+                        <canvas id="priceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 戦略的提言 -->
+        <section id="strategy" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-lightbulb"></i>
+                    戦略的提言
+                </h2>
+                <div class="strategy-grid">
+                    <div class="strategy-card china">
+                        <h3><i class="fas fa-flag"></i> 中国市場戦略</h3>
+                        <ul>
+                            <li>技術パートナーシップの構築</li>
+                            <li>現地生産体制の強化</li>
+                            <li>環境対応技術の開発</li>
+                        </ul>
+                    </div>
+                    <div class="strategy-card usa">
+                        <h3><i class="fas fa-star"></i> アメリカ市場戦略</h3>
+                        <ul>
+                            <li>高付加価値製品への特化</li>
+                            <li>技術革新の継続</li>
+                            <li>特許防衛戦略</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 結論 -->
+        <section id="conclusion" class="section conclusion" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-flag-checkered"></i>
+                    結論
+                </h2>
+                <div class="conclusion-content">
+                    <div class="conclusion-summary">
+                        <p>ガラス繊維製造装置ブッシング市場は、中国の急成長とアメリカの技術革新により、2025年まで堅調な成長が見込まれます。</p>
+                    </div>
+                    <div class="key-points">
+                        <div class="key-point">
+                            <h4><i class="fas fa-chart-line"></i> 市場・技術動向</h4>
+                            <ul>
+                                <li>年平均3.7%の成長継続</li>
+                                <li>超高弾性率繊維と3D技術が成長ドライバー</li>
+                                <li>中国が量的成長、アメリカが質的成長をリード</li>
+                            </ul>
+                        </div>
+                        <div class="key-point">
+                            <h4><i class="fas fa-patent"></i> 特許動向の影響</h4>
+                            <ul>
+                                <li>中国が出願件数で圧倒（68% vs 25%）</li>
+                                <li>プラチナ合金技術が最重要特許分野</li>
+                                <li>特許保護戦略が競争優位の鍵</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ガラス繊維製造装置ブッシング市場レポート. All rights reserved.</p>
+            <p class="disclaimer">本レポートは2024年12月時点の公開情報および特許データベースに基づいて作成されています。</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
