@@ -1,1 +1,11 @@
-# bushing
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=glass_fiber_bushing_report.html">
+    <title>ガラス繊維製造装置ブッシングの世界動向レポート</title>
+</head>
+<body>
+    <p>レポートページに転送中... <a href="glass_fiber_bushing_report.html">こちらをクリック</a>してください。</p>
+</body>
+</html>
